@@ -1,5 +1,5 @@
 # Docker
-> Instalacao, configuração e adminsitração de imagens docker para o projeto
+> Instalacao, configuração e administração de imagens docker para o projeto
 
 ## Instalação (Ubuntu)
 ```bash
