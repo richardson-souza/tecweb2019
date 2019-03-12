@@ -1,6 +1,6 @@
-web:
+api:
   restart: always
-  build: ./web
+  build: ./api
   command: /usr/local/bin/gunicorn -w 2 -b :5000 app:app
 
 nginx:
@@ -11,5 +11,5 @@ nginx:
   volumes:
     - ./conf.d:/etc/nginx/conf.d
   links:
-    - web:web
+    - api:api
 
