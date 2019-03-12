@@ -15,5 +15,16 @@
 | |____webapp.conf
 |____nginx
 | |____Dockerfile
+```  
+## Execução
 
+```bash
+$ docker-compose build
+$ docker-compose up -d
+```  
+## Teste  
+
+```bash
+$ curl http://localhost:8080/
+Olá Mundo!
 ```  
