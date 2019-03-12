@@ -5,16 +5,17 @@
 
 ```bash
 .
-|____docker-compose.yml
-|____web
+|____api
 | |____app.py
 | |____requirements.txt
 | |____Dockerfile
+|____docker-compose.yml
 |____README.md
 |____conf.d
-| |____webapp.conf
+| |____api.conf
 |____nginx
 | |____Dockerfile
+
 ```  
 ## Execução
 
