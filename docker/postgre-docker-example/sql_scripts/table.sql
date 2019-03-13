@@ -12,7 +12,7 @@ create table reg_motorista(
 	mot_cpf varchar(11) not null unique,
 	mot_rg varchar(20) not null,
 	mot_nome varchar(100) not null,
-	mot_renach integer not null,
+	mot_renach varchar not null,
 	mot_telefone varchar(20) not null,
 	mot_status varchar(7) not null,
 	mot_cep varchar(8) not null,
