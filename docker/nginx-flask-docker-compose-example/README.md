@@ -17,6 +17,24 @@
 | |____Dockerfile
 
 ```  
+## Docker-compose
+
+```bash
+api:
+  restart: always
+  build: ./api
+  command: /usr/local/bin/gunicorn -w 2 -b :5000 app:app
+
+nginx:
+  restart: always
+  build: ./nginx
+  ports:
+    - "8080:80"
+  volumes:
+    - ./conf.d:/etc/nginx/conf.d
+  links:
+    - api:api
+ ```  
 ## Execução
 
 ```bash
