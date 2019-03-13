@@ -29,6 +29,24 @@
 | |____table.sql
 
 ```  
+## Docker-compose
+```bash
+version: "3"
+services:
+  tecweb:
+    image: postgres:latest
+    container_name: "postgres"
+    environment:
+      - POSTGRES_DB=tecweb
+      - POSTGRES_USER=tecweb
+      - TZ=GMT
+    volumes:
+      - "./data/postgres:/var/lib/postgresql/data"
+    ports:
+      - 5432:5432
+```
+
+
 ## Execução
 
 ```bash
