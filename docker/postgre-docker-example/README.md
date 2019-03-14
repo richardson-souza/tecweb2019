@@ -4,28 +4,17 @@
 ## Arquitetura do projeto
 
 ```bash
-.
 |____data
 | |____postgres
 |____docker-compose.yml
 |____README.md
 |____sql_scripts
-| |____reg_motorista_mot_telefone.sql
-| |____reg_motorista_mot_cep.sql
-| |____reg_taxi_taxi_chassi.sql
-| |____reg_taxi_taxi_placa.sql
-| |____reg_motorista_mot_renach.sql
-| |____reg_taxi_taxi_modelo.sql
-| |____reg_taxi_taxi_status.sql
-| |____reg_permissao_perm_motorista_tipo.sql
-| |____reg_permissao_perm_data_fim.sql
-| |____reg_motorista_mot_rg.sql
-| |____reg_permissao_perm_status.sql
-| |____reg_taxi_taxi_marca.sql
-| |____reg_motorista_mot_rua.sql
-| |____reg_permissao_perm_data_inicio.sql
-| |____reg_motorista_mot_nome.sql
-| |____reg_motorista_mot_status.sql
+| |____reg_motorista.csv
+| |____reg_taxi.csv
+| |____reg_permissao.csv
+| |____reg_taxi_copy.sql
+| |____reg_motorista_copy.sql
+| |____reg_permissao_copy.sql
 | |____table.sql
 
 ```  
