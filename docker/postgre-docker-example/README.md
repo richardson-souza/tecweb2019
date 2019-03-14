@@ -53,4 +53,54 @@ $ docker-compose exec tecweb psql -U tecweb -d tecweb -1 -f /var/lib/postgresql/
 $ docker-compose exec tecweb psql -U tecweb -d tecweb -1 -f /var/lib/postgresql/data/reg_permissao_copy.sql
 $ docker-compose exec tecweb psql -U tecweb -d tecweb -1 -f /var/lib/postgresql/data/saa_usuario_copy.sql
 ```  
+## Comandos mágicos  
+Para acessar o banco:
+```bash
+$ docker-compose exec tecweb psql -U tecweb -d tecweb
+```  
+Exibir definição de tabelas:
+```bash
+tecweb=# \d
+                      Table "public.reg_motorista"
+    Column    |          Type          | Collation | Nullable
+ | Default 
+--------------+------------------------+-----------+---------
+-+---------
+ mot_cpf      | character varying(11)  |           | not null
+ | 
+ mot_rg       | character varying(20)  |           | not null
+ | 
+ mot_nome     | character varying(100) |           | not null
+ | 
+ mot_renach   | character varying      |           | not null
+ | 
+ mot_telefone | character varying(20)  |           | not null
+ | 
+ mot_status   | character varying(7)   |           | not null
+ | 
+ mot_cep      | character varying(8)   |           | not null
+ | 
+ mot_rua      | character varying(50)  |           |         
+ | 
+ mot_bairro   | character varying(50)  |           |         
+ | 
+Indexes:
+    "reg_motorista_pkey" PRIMARY KEY, btree (mot_cpf)
+Referenced by:
+    TABLE "reg_permissao" CONSTRAINT "reg_permissao_mot_cpf_f
+key" FOREIGN KEY (mot_cpf) REFERENCES reg_motorista(mot_cpf)
+```  
+```bash
+tecweb=# \d reg_motorista
+            List of relations
+ Schema |     Name      | Type  | Owner  
+--------+---------------+-------+--------
+ public | reg_motorista | table | tecweb
+ public | reg_permissao | table | tecweb
+ public | reg_taxi      | table | tecweb
+ public | saa_usuario   | table | tecweb
+(4 rows)
+```  
+
+
 
