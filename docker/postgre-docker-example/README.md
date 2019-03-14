@@ -12,11 +12,12 @@
 | |____reg_motorista.csv
 | |____reg_taxi.csv
 | |____reg_permissao.csv
+| |____saa_usuario_copy.sql
 | |____reg_taxi_copy.sql
 | |____reg_motorista_copy.sql
 | |____reg_permissao_copy.sql
+| |____saa_usuario.csv
 | |____table.sql
-
 ```  
 ## Docker-compose
 ```bash
