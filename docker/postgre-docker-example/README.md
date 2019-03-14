@@ -49,5 +49,6 @@ $ sudo cp sql_scripts/*.csv data/postgres/
 $ docker-compose exec tecweb psql -U tecweb -d tecweb -1 -f /var/lib/postgresql/data/table.sql
 $ docker-compose exec tecweb psql -U tecweb -d tecweb -1 -f /var/lib/postgresql/data/reg_motorista_copy.sql
 $ docker-compose exec tecweb psql -U tecweb -d tecweb -1 -f /var/lib/postgresql/data/reg_taxi_copy.sql
+$ docker-compose exec tecweb psql -U tecweb -d tecweb -1 -f /var/lib/postgresql/data/reg_permissao_copy.sql
 ```  
 
