@@ -37,7 +37,7 @@ services:
 ```
 
 
-## Execução
+## Iniciar o container
 
 ```bash
 $ docker-compose up tecweb
