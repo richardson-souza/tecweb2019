@@ -59,6 +59,19 @@ Para acessar o banco:
 $ docker-compose exec tecweb psql -U tecweb -d tecweb
 ```  
 Exibir definição de tabelas:
+
+```bash
+tecweb=# \d reg_motorista
+            List of relations
+ Schema |     Name      | Type  | Owner  
+--------+---------------+-------+--------
+ public | reg_motorista | table | tecweb
+ public | reg_permissao | table | tecweb
+ public | reg_taxi      | table | tecweb
+ public | saa_usuario   | table | tecweb
+(4 rows)
+```  
+
 ```bash
 tecweb=# \d
                       Table "public.reg_motorista"
@@ -89,17 +102,6 @@ Indexes:
 Referenced by:
     TABLE "reg_permissao" CONSTRAINT "reg_permissao_mot_cpf_f
 key" FOREIGN KEY (mot_cpf) REFERENCES reg_motorista(mot_cpf)
-```  
-```bash
-tecweb=# \d reg_motorista
-            List of relations
- Schema |     Name      | Type  | Owner  
---------+---------------+-------+--------
- public | reg_motorista | table | tecweb
- public | reg_permissao | table | tecweb
- public | reg_taxi      | table | tecweb
- public | saa_usuario   | table | tecweb
-(4 rows)
 ```  
 
 
