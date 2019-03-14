@@ -123,8 +123,6 @@ cweb=CTc/tecweb
 cweb=CTc/tecweb
 (4 rows)
 ```
-
-
 Listar relacionamentos:
 ```bash
 tecweb=# \di
@@ -139,7 +137,7 @@ tecweb=# \di
  public | saa_usuario_pkey   | index | tecweb | saa_usuario
 (4 rows)
 ```
-
-
-
-
+O mais importante sair da sessão:
+```bash
+tecweb=# \q
+```
