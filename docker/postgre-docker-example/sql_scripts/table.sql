@@ -3,7 +3,7 @@ create table saa_usuario(
 	usu_cpf varchar(11) primary key not null unique,
 	usu_nome varchar(100) not null,
 	usu_status varchar(7) not null,
-	usu_senha varchar(30) not null
+	usu_senha varchar not null
 	
 );
 
