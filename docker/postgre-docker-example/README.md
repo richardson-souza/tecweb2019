@@ -103,6 +103,28 @@ Referenced by:
     TABLE "reg_permissao" CONSTRAINT "reg_permissao_mot_cpf_f
 key" FOREIGN KEY (mot_cpf) REFERENCES reg_motorista(mot_cpf)
 ```  
+Listar bancos:
+```bash
+tecweb=# \l
+                              List of databases
+   Name    | Owner  | Encoding |  Collate   |   Ctype    | Ac
+cess privileges 
+-----------+--------+----------+------------+------------+---
+----------------
+ postgres  | tecweb | UTF8     | en_US.utf8 | en_US.utf8 | 
+ tecweb    | tecweb | UTF8     | en_US.utf8 | en_US.utf8 | 
+ template0 | tecweb | UTF8     | en_US.utf8 | en_US.utf8 | =c
+/tecweb        +
+           |        |          |            |            | te
+cweb=CTc/tecweb
+ template1 | tecweb | UTF8     | en_US.utf8 | en_US.utf8 | =c
+/tecweb        +
+           |        |          |            |            | te
+cweb=CTc/tecweb
+(4 rows)
+```
+
+
 Listar relacionamentos:
 ```bash
 tecweb=# \di
