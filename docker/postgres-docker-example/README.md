@@ -35,9 +35,7 @@ services:
     ports:
       - 5432:5432
 ```
-
-
-## Iniciar o container
+## Iniciar o conteiner
 
 ```bash
 $ docker-compose up tecweb
