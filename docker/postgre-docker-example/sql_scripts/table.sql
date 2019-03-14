@@ -1,4 +1,4 @@
-create table reg_usuario(
+create table saa_usuario(
 	
 	usu_cpf varchar(11) primary key not null unique,
 	usu_nome varchar(100) not null,
@@ -41,7 +41,6 @@ create table reg_permissao(
 	perm_tipo_motorista varchar(15) not null,
 	perm_status varchar(7) not null,
 	mot_cpf varchar(11) references reg_motorista(mot_cpf),
-	usu_cpf varchar(11) references reg_usuario(usu_cpf),
 	taxi_placa varchar(8) references reg_taxi(taxi_placa),
-	primary key(mot_cpf, usu_cpf, taxi_placa)
+	primary key(mot_cpf, taxi_placa)
 )
