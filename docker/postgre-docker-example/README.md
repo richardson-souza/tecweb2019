@@ -50,5 +50,6 @@ $ docker-compose exec tecweb psql -U tecweb -d tecweb -1 -f /var/lib/postgresql/
 $ docker-compose exec tecweb psql -U tecweb -d tecweb -1 -f /var/lib/postgresql/data/reg_motorista_copy.sql
 $ docker-compose exec tecweb psql -U tecweb -d tecweb -1 -f /var/lib/postgresql/data/reg_taxi_copy.sql
 $ docker-compose exec tecweb psql -U tecweb -d tecweb -1 -f /var/lib/postgresql/data/reg_permissao_copy.sql
+$ docker-compose exec tecweb psql -U tecweb -d tecweb -1 -f /var/lib/postgresql/data/saa_usuario_copy.sql
 ```  
 
