@@ -103,6 +103,21 @@ Referenced by:
     TABLE "reg_permissao" CONSTRAINT "reg_permissao_mot_cpf_f
 key" FOREIGN KEY (mot_cpf) REFERENCES reg_motorista(mot_cpf)
 ```  
+Listar relacionamentos:
+```bash
+tecweb=# \di
+                      List of relations
+ Schema |        Name        | Type  | Owner  |     Table    
+ 
+--------+--------------------+-------+--------+--------------
+-
+ public | reg_motorista_pkey | index | tecweb | reg_motorista
+ public | reg_permissao_pkey | index | tecweb | reg_permissao
+ public | reg_taxi_pkey      | index | tecweb | reg_taxi
+ public | saa_usuario_pkey   | index | tecweb | saa_usuario
+(4 rows)
+```
+
 
 
 
