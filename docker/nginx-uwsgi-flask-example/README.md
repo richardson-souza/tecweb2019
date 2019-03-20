@@ -1,4 +1,4 @@
-# Exemplo de criação de conteiners Ngnix + Flask
+# Exemplo de criação de conteiners Ngnix + uWSGI + Flask
 > um pequeno exemplo para cração de dois containers utilizando docker compose
 
 ## Arquitetura do projeto
